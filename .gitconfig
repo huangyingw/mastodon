@@ -1,18 +1,15 @@
 [remote "tootsuite"]
     url = git@github.com:tootsuite/mastodon.git
     fetch = +refs/heads/*:refs/remotes/tootsuite/*
-[remote "github"]
-    url = git@github.com:huangyingw/mastodon.git
-    fetch = +refs/heads/*:refs/remotes/github/*
 [push]
-    remote = github
+    remote = origin
 [gsync]
     remote = tootsuite
     branch = master
 [merge]
 	allow = true
 [branch "dev"]
-    remote = github
+    remote = origin
     merge = refs/heads/dev
 [branch "master"]
     remote = tootsuite
